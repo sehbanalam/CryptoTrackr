@@ -7,7 +7,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
-        <div className=" font-times min-h-screen bg-gray-100 dark:bg-gray-950 text-black dark:text-white">
+        <div className="min-h-screen bg-[#1A1A1D] text-white">
           <Header />
           <main className="p-6">
             <AppRoutes />
