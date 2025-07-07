@@ -1,5 +1,5 @@
-import { useCoins } from '../hooks/useCoins';
-import CoinCard from '../../shared/components/coinCard';
+import { useCoins } from '../hooks/UseCoins';
+import CoinCard from '../../shared/components/CoinCard';
 
 const CoinList = () => {
   const { coins, loading, error } = useCoins();

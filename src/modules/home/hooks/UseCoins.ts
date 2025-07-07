@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { fetchCoins } from '../api/coins.api';
-import type { Coin } from '../types/coin.types';
+import { fetchCoins } from '../api/Coins.api';
+import type { Coin } from '../types/Coin.types';
 
 export const useCoins = () => {
   const [coins, setCoins] = useState<Coin[]>([]);
