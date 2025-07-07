@@ -1,6 +1,13 @@
 # 💰 CryptoTrackr
 
-A modern React-based cryptocurrency tracker that fetches real-time data from the [CoinGecko API](https://www.coingecko.com/en/api), built using:
+A modern React-based cryptocurrency tracker that fetches real-time data from the [CoinGecko API](https://www.coingecko.com/en/api).
+
+> **🛠️ This is a learning project to explore and practice Vite, React, TypeScript, and Tailwind CSS.**  
+> Built to understand modular React architecture, API integration, and modern frontend tooling.
+
+---
+
+## 🛠️ Tech Stack
 
 - ⚡️ [Vite](https://vitejs.dev/) + [React](https://react.dev/)
 - 🎨 [Tailwind CSS](https://tailwindcss.com/) (via `@tailwindcss/vite`)
@@ -61,7 +68,7 @@ Powered by [CoinGecko Public API](https://www.coingecko.com/en/api).
 
 ## 🚀 Deployment
 
-You can deploy this on [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/).
+Deployed live at: [https://crypto-trackr-nu.vercel.app/](https://crypto-trackr-nu.vercel.app/)
 
 ---
 
