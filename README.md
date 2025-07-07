@@ -1,69 +1,70 @@
-# React + TypeScript + Vite
+# 💰 CryptoTrackr
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based cryptocurrency tracker that fetches real-time data from the [CoinGecko API](https://www.coingecko.com/en/api), built using:
 
-Currently, two official plugins are available:
+- ⚡️ [Vite](https://vitejs.dev/) + [React](https://react.dev/)
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) (via `@tailwindcss/vite`)
+- 🌗 Light/Dark theme using React Context
+- 🧭 Modular folder structure
+- 🔁 React Router for routing
+- 🧪 TypeScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📦 Setup
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/your-username/cryptotrackr.git
+cd cryptotrackr
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Folder Structure
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── App.tsx              # App layout with Header + Routes
+├── main.tsx             # Entry point (with BrowserRouter)
+├── routes/              # All route definitions
+│   └── Routes.tsx
+├── modules/             # Modular feature-based architecture
+│   ├── home/
+│   │   └── pages/Home.tsx
+│   │   └── components/CoinList.tsx
+│   ├── shared/
+│   │   └── components/Header.tsx, CoinCard.tsx
+│   │   └── context/ThemeContext.tsx
+├── index.css            # Tailwind import
+```
+
+---
+
+## 🎯 Features
+
+- ✅ Real-time crypto market data
+- ✅ Responsive Tailwind styling
+- ✅ Modular code organization
+- ✅ Global layout with persistent header
+- ✅ Light/Dark theme toggle
+- ✅ Routing structure ready for multi-page app
+
+---
+
+## 🔗 API Reference
+
+Powered by [CoinGecko Public API](https://www.coingecko.com/en/api).
+
+---
+
+## 🚀 Deployment
+
+You can deploy this on [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/).
+
+---
+
+## 📜 License
+
+MIT
